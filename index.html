@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+
+    <button class="start-btn" id="start" type="button">Start Quiz</button>
+
+    <div class="quiz" id="quiz-block">
+        <h2 class="quiz__question" id="question"></h2>
+
+        <div class="quiz__answers">
+
+            <label for="A" class="quiz__answer-text">
+                <input class="quiz__answer answer" type="radio" name="answer" id="A" value="A" checked>
+                <span class="answer-a"></span>
+            </label>
+
+            <label for="B" class="quiz__answer-text">
+                <input class="quiz__answer answer" type="radio" name="answer" id="B" value="B">
+                <span class="answer-b"></span>
+            </label>
+
+            <label for="C" class="quiz__answer-text">
+                <input class="quiz__answer answer" type="radio" name="answer" id="C" value="C">
+                <span class="answer-c"></span>
+            </label>
+
+            <label for="D" class="quiz__answer-text">
+                <input class="quiz__answer answer" type="radio" name="answer" id="D" value="D">
+                <span class="answer-d"></span>
+            </label>
+
+        </div>
+
+        <button class="quiz__next-btn" type="submit">Next</button>
+    </div>
+
+    <div class="result"></div>
+</body>
+</html>
